@@ -21,14 +21,6 @@ const __dirname = path.resolve()
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '/client/build')))
-<<<<<<< HEAD
-
-  app.get('*', (req, res) =>
-    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-  )
-}
-=======
->>>>>>> 9005e0af4c0d7cc4cd1a1d08aa8c6c1534606dbd
 
   app.get('*', (req, res) =>
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
